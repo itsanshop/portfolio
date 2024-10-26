@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Engineer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-10 top-0">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-500">Frontend Portfolio</a>
+      <div class="space-x-4">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-blue-100" id="home">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold">Hi, I'm a Frontend Engineer</h1>
+      <p class="mt-4 text-xl">Specializing in Angular with 1 year of experience</p>
+      <button onclick="scrollToSection('contact')" class="mt-8 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg">Contact Me</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container mx-auto p-8 mt-12" id="about">
+    <h2 class="text-3xl font-bold text-center">About Me</h2>
+    <p class="mt-4 text-center text-lg text-gray-700">
+      I am a passionate frontend engineer with 1 year of experience in building responsive and dynamic web applications using Angular. I am constantly learning and growing in the field of web development, and I'm excited about new technologies and creative projects.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="container mx-auto p-8 mt-12" id="skills">
+    <h2 class="text-3xl font-bold text-center">Skills</h2>
+    <div class="flex flex-wrap justify-center mt-4">
+      <div class="bg-white shadow-md p-4 m-2 rounded-lg">
+        <p>HTML</p>
+      </div>
+      <div class="bg-white shadow-md p-4 m-2 rounded-lg">
+        <p>CSS</p>
+      </div>
+      <div class="bg-white shadow-md p-4 m-2 rounded-lg">
+        <p>JavaScript</p>
+      </div>
+      <div class="bg-white shadow-md p-4 m-2 rounded-lg">
+        <p>Angular</p>
+      </div>
+      <div class="bg-white shadow-md p-4 m-2 rounded-lg">
+        <p>Tailwind CSS</p>
+      </div>
+      <div class="bg-white shadow-md p-4 m-2 rounded-lg">
+        <p>Responsive Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container mx-auto p-8 mt-12" id="projects">
+    <h2 class="text-3xl font-bold text-center">Projects</h2>
+    <div class="flex flex-wrap justify-center mt-4">
+      <!-- Project 1 -->
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden m-4">
+        <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Project 1</h3>
+          <p class="mt-2 text-gray-600">An Angular project that highlights interactive UI/UX design.</p>
+          <a href="#" class="text-blue-500 mt-2 inline-block">View Project</a>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden m-4">
+        <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Project 2</h3>
+          <p class="mt-2 text-gray-600">A responsive dashboard application created with Angular and Tailwind.</p>
+          <a href="#" class="text-blue-500 mt-2 inline-block">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto p-8 mt-12 bg-gray-200" id="contact">
+    <h2 class="text-3xl font-bold text-center">Contact Me</h2>
+    <div class="flex justify-center mt-6">
+      <form class="w-full max-w-lg bg-white p-8 shadow-md rounded-lg">
+        <label class="block mb-4">
+          <span class="text-gray-700">Name</span>
+          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" placeholder="Your Name">
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Email</span>
+          <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" placeholder="Your Email">
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Message</span>
+          <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" rows="3" placeholder="Your Message"></textarea>
+        </label>
+        <button type="submit" class="w-full px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
